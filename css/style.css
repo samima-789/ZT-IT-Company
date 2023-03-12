@@ -7,6 +7,11 @@
 
 }
 
+section{
+    margin-bottom: 100px;
+}
+
+
 
 #bg-video{
     position: absolute;
@@ -15,11 +20,13 @@
 }
 
 .main{
-    min-height: 110vh;
+    min-height: 120vh;
     width: 100%;
     background-color: rgba(3, 0, 8, 0.7);
 	backdrop-filter: blur(0px);
     padding: 20px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     position: relative;
 }
 
@@ -187,4 +194,201 @@ nav .fa{
     margin: 13px 0;
     font-size: 25px;
     color: #008374;
+}
+
+
+/*-- Service Section Start --*/
+
+.service-section .col-lg-3{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.service-section .col-lg-3:hover{
+    transform: translateY(-10px);
+
+}
+
+.service-section .col-lg-3:nth-child(1){
+    background-color: #faf6f3;
+}
+.service-section .col-lg-3:nth-child(2){
+    background-color: #edf2fe;
+}
+.service-section .col-lg-3:nth-child(3){
+    background-color: #f0f5f4 ;
+}
+.service-section .col-lg-3:nth-child(4){
+    background-color: #fff5f6;
+}
+
+.service-section .service-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sub-menu1{
+    color: #ff6243;
+    font-weight: 700;
+}
+
+.sub-menu2{
+    color: #b9cefd;
+    font-weight: 700;
+}
+
+.sub-menu3{
+    color: #72a499;
+    font-weight: 700;
+}
+
+.sub-menu4{
+    color: #e7445b;
+    font-weight: 700;
+}
+
+.service-section .service-icon img{
+    width: 55px;
+}
+
+
+
+.service-section .service-content h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #008374;
+    margin-bottom: 20px;
+}
+
+.service-section .service-content p{
+    color: #566573;
+}
+/*-- Service Section End --*/
+
+/*-- Feature Section Start --*/
+.feature-area .feature-img img{
+    width: 100%;
+    border-top-left-radius: 50px;
+}
+
+.feature-img{
+    position: relative;
+}
+
+.features{
+    width: 300px;
+    height: 330px;
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-top-left-radius: 50px;
+}
+
+.feature-img-content{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    background-color: #008374;
+    padding: 20px;
+    border-top-left-radius: 50px;
+}
+
+.feature-img-content p{
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.feature-img-content p span{
+    font-size: 110px;
+    font-weight: 700;
+}
+
+.feature-content{
+    padding: 100px;
+}
+
+.feature-content .btn{ 
+    background-color: #008374;
+    color: #fff;
+    width: 200px;
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 20px  0;
+    transition: .3s;
+}
+
+.feature-content .btn:hover{
+    background-color: #fff;
+    color: #008374;
+    border-radius: 0 20px;
+    border: 2px solid #008374;
+}
+
+.feature-content span{
+    display: block;;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 700;
+    position: relative;
+}
+
+.feature-content span::before{
+    content: '';
+    width: 30%;
+    height: 3px;
+    background-color: #008374;
+    position: absolute;
+    top: 0;
+    left: 140px;
+}
+
+.feature-content h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #008374;
+    margin-bottom: 20px;
+}
+
+.feature-content P{
+    color: #566573;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*-- Feature Section End --*/
+
+/*-- Services Sectio Start --*/
+.container .heading-part{
+    text-align: center;
+}
+
+.container .heading-part h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #008374;
+    margin-bottom: 20px;
+}
+
+.container .heading-part p{
+    color: #566573;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.container .services-icon img{
+    width: 60px;
+}
+
+.our-services .col-lg-4{
+    padding: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
