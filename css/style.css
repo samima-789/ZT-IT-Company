@@ -12,12 +12,14 @@ section{
     margin-bottom: 100px;
     position: relative;
 }
-
+/*-- Background video part --*/
 #bg-video{
     position: absolute;
     z-index: -1; 
 }
 
+
+/*-- Social icon part start --*/
 #social-icon ul li a i{
     transition: .5s;
 }
@@ -27,6 +29,26 @@ section{
     color: #566573;
 }
 
+
+/*-- Button Part --*/
+.social-icons{
+    position: fixed;
+    top: 300px;
+    left: 0;
+    background-color: #056c5f;
+    padding-right: 10px;
+    border-top-right-radius: 15px;
+    z-index: 1;
+}
+
+.social-icons ul li a i{
+    margin: 13px 0;
+    font-size: 25px;
+    color: #eea676;
+} 
+
+
+/*-- Hero section Start --*/
 .main{
     min-height: 105vh;
     width: 100%;
@@ -170,51 +192,35 @@ canvas{
     border-radius: 20px  0;
     transition: .3s;
 }
-
-.social-icons{
-    position: fixed;
-    top: 300px;
-    left: 0;
-    background-color: #056c5f;
-    padding-right: 10px;
-    border-top-right-radius: 15px;
-    z-index: 1;
-}
-
-.social-icons ul li a i{
-    margin: 13px 0;
-    font-size: 25px;
-    color: #eea676;
-}
+/*-- Hero section end --*/
 
 
-/*-- Service Section Start --*/
+/*-- Feature Section Start --*/
 
-.service-section .col-lg-3{
+.feature-section .col-lg-3{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: .5s;
     border-radius: 5px;
 }
 
-.service-section .col-lg-3:hover{
+.feature-section .col-lg-3:hover{
     transform: translateY(-10px);
-
 }
 
-.service-section .col-lg-3:nth-child(1){
+.feature-section .col-lg-3:nth-child(1){
     background-color: #faf6f3;
 }
-.service-section .col-lg-3:nth-child(2){
+.feature-section .col-lg-3:nth-child(2){
     background-color: #edf2fe;
 }
-.service-section .col-lg-3:nth-child(3){
+.feature-section .col-lg-3:nth-child(3){
     background-color: #f0f5f4 ;
 }
-.service-section .col-lg-3:nth-child(4){
+.feature-section .col-lg-3:nth-child(4){
     background-color: #fff5f6;
 }
 
-.service-section .service-icon{
+.feature-section .feature-icon{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -241,35 +247,34 @@ canvas{
     font-weight: 700;
 }
 
-.service-section .service-icon img{
+.feature-section .feature-icon img{
     width: 55px;
 }
 
-
-
-.service-section .service-content h2{
+.feature-section .feature-content h2{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     color: #008374;
     margin-bottom: 20px;
 }
 
-.service-section .service-content p{
+.feature-section .feature-content p{
     color: #566573;
 }
-/*-- Service Section End --*/
+/*-- Feature Section End --*/
 
-/*-- Feature Section Start --*/
-.feature-area .feature-img img{
+
+/*-- About Section Start --*/
+.about-area .about-img img{
     width: 100%;
     border-top-left-radius: 50px;
 }
 
-.feature-img{
+.about-img{
     position: relative;
 }
 
-.features{
+.about{
     width: 300px;
     height: 330px;
     position: absolute;
@@ -280,7 +285,7 @@ canvas{
     border-top-left-radius: 50px;
 }
 
-.feature-img-content{
+.about-img-content{
     width: 300px;
     height: 300px;
     position: absolute;
@@ -291,23 +296,23 @@ canvas{
     border-top-left-radius: 50px;
 }
 
-.feature-img-content p{
+.about-img-content p{
     color: #fff;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.feature-img-content p span{
+.about-img-content p span{
     font-size: 110px;
     font-weight: 700;
 }
 
-.feature-content{
+.about-content{
     padding: 100px;
 }
 
-.feature-content .btn{ 
+.about-content .btn{ 
     background-color: #008374;
     color: #fff;
     width: 200px;
@@ -317,14 +322,14 @@ canvas{
     transition: .3s;
 }
 
-.feature-content .btn:hover{
+.about-content .btn:hover{
     background-color: #fff;
     color: #008374;
     border-radius: 0 20px;
     border: 2px solid #008374;
 }
 
-.feature-content span{
+.about-content span{
     display: block;;
     text-align: center;
     margin-bottom: 5px;
@@ -332,7 +337,7 @@ canvas{
     position: relative;
 }
 
-.feature-content span::before{
+.about-content span::before{
     content: '';
     width: 30%;
     height: 3px;
@@ -342,7 +347,7 @@ canvas{
     left: 140px;
 }
 
-.feature-content h2{
+.about-content h2{
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
     font-weight: 500;
@@ -350,11 +355,13 @@ canvas{
     margin-bottom: 20px;
 }
 
-.feature-content P{
+.about-content P{
     color: #566573;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*-- Feature Section End --*/
+/*-- About Section End --*/
+
+
 
 /*-- Services Sectio Start --*/
 .container .heading-part{
@@ -394,8 +401,12 @@ canvas{
 
 }
 
-.services-part .row img{
+.services-part .row i{
     width: 100px;
+    background-color: #ccc;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
 	display: flex;
 	margin: 0 auto;
 	align-items: center;
@@ -407,7 +418,7 @@ canvas{
 
 .services-part .row h3{
 	text-align: center;
-	color: #000;
+	color: #eea676;
 	font-size: 22px;
 	margin-bottom: 15px;
 }
@@ -451,7 +462,7 @@ canvas{
     right: 0;
     padding: 70px;
     width: 300px;
-    height: 295px;
+    height: 277px;
     border-radius: 10px;
     transform: translateY(-50%);
     background-color: rgba(3, 0, 8, 0.7);
@@ -467,25 +478,101 @@ canvas{
     opacity: 1;
 }
 
-.fun-fact-wrapper .fun-fact-four{
-    position: relative;
-    margin-bottom: 40px;
+/*-- Counter Up Section Start --*/
+.counter-up{
+    background: url(../imgs/counter-bg.jpg) no-repeat;
+    min-height: 50vh;
     display: flex;
     align-items: center;
+    padding: 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.fun-fact-wrapper .fun-fact-four .icon{
-    border-radius: 10px;
-    height: 80px;
-    width: 80px;
-    line-height: 80px;
-    background: #fff;
-    font-size: 30px;
-    text-align: center;
-    margin-right: 20px;
-    box-shadow: 0 0 15px rgba(51, 51, 51, 0.05);
-    color: #ff6243;
+.counter-up::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
+
+.counter-up .content{
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .box{
+    width: calc(25% - 30px);
+    
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.content .box .icon{
+    background-color: #ccc;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 35px;
+    color: #056c5f;
+}
+
+.content .box .counter{
+    font-size: 50px;
+    color: #eea676;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.content .box .text{
+    color: #ccc;
+    font-weight: 400;
+}
+
+/*-- Counter Up Section End --*/
+
+/*-- Review Section start --*/
+.slider{
+    padding-bottom: 20px;
+}
+.review{
+    text-align: center;
+    border: .5px solid #056c5f;
+    box-shadow: 1px 1px 10px 1px #566573;
+}
+.review a i{
+    font-size: 20px;
+}
+.review img{
+    padding-bottom: 10px;
+}
+
+.review h5{
+    color: #eea676;
+    padding: 5px 0px;
+}
+.review p{
+    color: rgb(97, 97, 97);
+    padding-bottom: 10px;
+}
+/*-- Review Section End --*/
 
 
 /*-- Footer Section Start --*/
