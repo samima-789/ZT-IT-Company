@@ -47,6 +47,23 @@ section{
     color: #eea676;
 } 
 
+/*-- Slick Slider --*/
+.slick-dots li button{
+    font-size: 0;
+    height: 10px;
+    width: 10px;
+    background: #056c5f;
+    border-radius: 30px;
+    border: none;
+    margin: 0px 5px;
+}
+
+.slick-dots .slick-active button{
+    background: #eea676;
+    height: 15px;
+    width: 15px;
+}
+
 
 /*-- Hero section Start --*/
 .main{
@@ -366,6 +383,7 @@ canvas{
 /*-- Services Sectio Start --*/
 .container .heading-part{
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .container .heading-part h2{
@@ -373,7 +391,6 @@ canvas{
     font-size: 35px;
     font-weight: 500;
     color: #008374;
-    margin-bottom: 20px;
 }
 
 .container .heading-part p{
@@ -548,38 +565,93 @@ canvas{
 
 /*-- Counter Up Section End --*/
 
-/*-- Review Section start --*/
-.slider{
-    padding-bottom: 20px;
+/*-- Special Team Member Section start --*/
+.team{
+    padding-bottom: 40px;
 }
-.review{
+.special-team{
     text-align: center;
     border: .5px solid #056c5f;
     box-shadow: 1px 1px 10px 1px #566573;
+    margin-bottom: 20px;
 }
-.review a i{
+.special-team a i{
     font-size: 20px;
 }
-.review img{
+.special-team img{
+
     padding-bottom: 10px;
 }
 
-.review h5{
+.special-team h5{
     color: #eea676;
-    padding: 5px 0px;
 }
-.review p{
+
+.special-team a i{
+    font-size: 23px;
+    color: #056c5f;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    background-color: #f0f5f4;
+    padding: 8px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.special-team a i:hover{
     color: rgb(97, 97, 97);
-    padding-bottom: 10px;
+    transform: scale(1.1);
+}
+.special-team p{
+    color: rgb(97, 97, 97);
+    padding-bottom: 5px;
+}
+
+/*-- Special Team member Section End --*/
+
+
+/*-- Review Section Start --*/
+.review-item{
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.review .review-item:nth-child(1){
+    background-color: #faf6f3;
+}
+.review .review-item:nth-child(2){
+    background-color: #edf2fe;
+}
+.review .review-item:nth-child(3){
+    background-color: #f0f5f4 ;
+}
+
+.review-item img{
+    background-color: #056c5f;
+    padding: 10px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+
+.review-item i{
+    margin-bottom: 20px;
+    color: #eea676;
+}
+
+.review-item p{
+    margin-bottom: 20px;
 }
 /*-- Review Section End --*/
 
-
 /*-- Footer Section Start --*/
-footer{
+.footer{
     background-color: #056c5f;
-    border-top-left-radius: 100px;
-    
+    border-top-left-radius: 100px;   
 }
 
 .footer .row{

@@ -22,3 +22,23 @@ $(document).ready(function(){
       time: 1200
   });
 });
+
+
+/*-- Slick-slider --*/
+$('.slick_slide1').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  dots:true,
+  speed: 800,
+  autoplaySpeed: 2000,
+});
+
+$('.slick_slide2').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  dots:true,
+  speed: 800,
+  autoplaySpeed: 2000,
+});
