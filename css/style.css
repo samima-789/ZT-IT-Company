@@ -64,6 +64,14 @@ section{
     width: 15px;
 }
 
+.slick-next::before{
+    content: "";
+}
+
+.slick-dots li.slick-active button:before{
+    display: none;
+}
+
 
 /*-- Hero section Start --*/
 .main{
@@ -618,13 +626,13 @@ canvas{
     margin-bottom: 20px;
 }
 
-.review .review-item:nth-child(1){
+.review .slick-slide:nth-child(1) .review-item {
     background-color: #faf6f3;
 }
-.review .review-item:nth-child(2){
+.review .slick-slide:nth-child(2) .review-item {
     background-color: #edf2fe;
 }
-.review .review-item:nth-child(3){
+.review .slick-slide:nth-child(3) .review-item {
     background-color: #f0f5f4 ;
 }
 
@@ -779,3 +787,201 @@ hr{
     background-color: #fff;
 }
 /*-- Footer Section End --*/
+
+
+
+
+
+/*=====================-- Start About Page --=======================*/
+
+.about-main nav a{
+    text-decoration: none;
+}
+
+.about-main nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.about-main nav .logo{
+    font-size: 25px;
+    color: #056c5f;
+    font-weight: 500;
+}
+
+.about-main nav .logo span{
+    font-size: 30px;
+    font-weight: 900;
+    background-color: #fff;
+    color: #056c5f;
+    padding: 6px;
+    border-radius: 50px;
+    border: 3px solid #056c5f;
+}
+
+.about-main .nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.about-main .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    transition: .5s;
+}
+
+.about-main .nav-links ul li a{
+    color: #056c5f;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.about-main .nav-links ul li a:hover{
+    text-decoration: none;
+}
+
+.about-main .nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #056c5f;
+    position: absolute;
+    display: block;
+    left: 10px;
+    transition: .5s;
+}
+
+.about-main .nav-links ul li:hover::after{
+    width: 35px;
+}
+
+
+.about-main .nav-links ul li::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #056c5f;
+    position: absolute;
+    display: block;
+    right: 10px;
+    transition: .5s;
+}
+
+.about-main .nav-links ul li:hover::before{
+    width: 35px;
+}
+
+.about-main nav .fa{
+    display: none;
+}
+.about-main-homePage{
+    background: url(../imgs/about-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.about-main-homePage .about-global{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(3, 0, 8, 0.7);
+	backdrop-filter: blur(0px);
+    position: relative;
+}
+
+.about-main-homePage .about-global img{
+     width: 500px;
+     height: 500px;
+     position: absolute;
+     left: 400px;
+     top: 0;
+     transition: all ease-in-out .3s ;
+     animation: global 10s infinite;
+}
+@keyframes global{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.about-main-homePage .about-global .about-main-homePage-text{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.about-main-homePage .about-global .about-main-homePage-text h2{
+    color: #eea676;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.about-main-homePage .about-global .about-main-homePage-text p{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.about-main-homePage .about-global .about-main-homePage-text p a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#about .container .col-lg-6 h2{
+    color: #056c5f;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Sen', sans-serif;
+    line-height: 1.2;
+}
+#about .container .col-lg-6 h2 span{
+    color: #eea676;
+}
+#about .container .col-lg-6 p{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+#about .container .about-img img{
+    width: 550px;
+    height: 450px;
+
+    border-bottom-right-radius: 100px;
+}
+#about .container .about-img{
+    position: relative;
+}
+#about .container .about-img .about-ex1{
+    width: 200px;
+    height: 200px;
+    background-color: #056c5f;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container .about-img .about-ex1 .about-ex2 #p1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+#about .container .about-img .about-ex1 .about-ex2 #p2{
+    color: #eea676;
+    font-size: 15px;
+    font-weight: 600;
+}
