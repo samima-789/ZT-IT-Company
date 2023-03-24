@@ -1007,10 +1007,10 @@ hr{
     background-color: rgba(3, 0, 8, 0.7);
 	backdrop-filter: blur(0px);
 }
-.offer .offer-heading{
+.heading{
     padding: 20px;
 }
-.offer .offer-heading h2{
+.heading h2{
     color: #056c5f;
     text-align: center;
     margin-top: 20px;
@@ -1019,7 +1019,7 @@ hr{
     font-family: 'Sen', sans-serif;
     line-height: 1.2;
 }
-.offer .offer-heading h2 span{
+.heading h2 span{
     color: #eea676;
 }
 .offer img{
@@ -1038,6 +1038,198 @@ hr{
     color: #eea676;
     text-align: center;
     font-weight: 500;
+}
+
+/*-- Our Best Skill Section --*/
+.our-best-skills{
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #BABECC;
+}
+.our-best-skills p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #056c5f;
+    margin-top: 50px;
+}
+.our-best-skills .our-best-skills-content{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.our-best-skills .our-best-skills-content img{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+.our-best-skills .our-best-skills-content span{
+    color: #056c5f;
+    font-weight: 300;
+}
+.our-best-skills .our-best-skills-content .name{
+    color: #eea676;
+    font-weight: 700;
+}
+
+.our-best-skills .col{
+	width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.our-best-skills .skill{
+	width: 100%;
+	list-style: none;
+	padding-top: 10%;
+}
+
+.our-best-skills .skill li{
+	margin-bottom: 8px; 
+	background: #E6E4E7; 
+	height:30px; 
+	border-radius:15px; 
+	position: relative;
+}
+
+.our-best-skills .skillbar{
+	height: 10px; 
+	margin: 5px 11px; 
+	position: absolute;
+}
+
+.our-best-skills .skillbar em{
+	color: white;
+	position: absolute;
+	top: 0;
+    font-size: 12px;
+	font-weight: 500;
+}
+
+#web{
+	width: 86%;
+	padding: 10px;
+	position: absolute;
+	background-color: #eea676;
+	animation:web 2s ease-out;
+	border-radius: 15px;
+	left: -10px;
+}
+
+#apps{
+	width: 70%;
+	padding: 10px;
+	position: absolute;
+	background-color: #056c5f;
+	animation:apps 2s ease-out;
+	border-radius: 15px;
+	left: -10px;
+}
+
+#e-commerce{
+	width: 85%;
+	padding: 10px;
+	position: absolute;
+	background-color: #eea676;
+	animation:e-commerce 2s ease-out;
+	border-radius: 15px;
+	left: -10px;
+}
+
+#software{
+	width: 95%;
+	padding: 10px;
+	position: absolute;
+	background-color: #056c5f;
+	animation: software 2s ease-out;
+	border-radius: 15px;
+	left: -10px;
+}
+
+#digital{
+	width: 65%;
+	padding: 10px;
+	position: absolute;
+	background-color: #eea676;
+	animation:digital 2s ease-out;
+	border-radius: 15px;
+	left: -10px;
+}
+
+#graphics{
+	width: 50%;
+	padding: 10px;
+	position: absolute;
+	background-color: #056c5f;
+	animation:graphics 2s ease-out;
+	border-radius: 15px;
+	left: -10px;
+}
+
+
+
+@keyframes web{ 
+	0%{ 
+		width:0px; 
+	}
+	45%{ 
+		width:70%; 
+	}  
+}
+
+@keyframes apps{ 
+	0%{ 
+		width:0px; 
+	}
+	45%{ 
+		width:40%; 
+	}  
+}
+@keyframes e-commerce{ 
+	0%{ 
+		width:0px; 
+	}
+	60%{ 
+		width:60%; 
+	}  
+}
+@keyframes software{
+    0%{ 
+    	width:0px; 
+    } 
+    50%{ 
+    	width:50%; 
+    }  
+}
+@keyframes digital{ 
+	0%{ 
+		width:0px; 
+	} 
+	40%{ 
+		width:40%; 
+	}  
+}
+@keyframes graphics{ 
+	0%{ 
+		width:0px; 
+	} 
+	30%{ 
+		width:30%; 
+	}  
+}
+.skill li{
+    position: relative;
+}
+.skill li .em{
+    position: absolute;
+    text-align: right;
+    color: #056c5f;
+    font-weight: 900;
+    right: 0;
+}
+.skill li .em-color{
+    color: #eea676;
 }
 
 
