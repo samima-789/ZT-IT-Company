@@ -42,3 +42,7 @@ $('.slick_slide2').slick({
   speed: 800,
   autoplaySpeed: 2000,
 });
+
+
+
+/*-- Shuffle Section --*/
