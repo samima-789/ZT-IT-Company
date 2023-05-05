@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="social-icons" id="social-icon">
@@ -22,7 +25,7 @@
     </div>
     
     <section class="header">
-        <div class="contact-main">
+        <div class="blog-main">
             <div class="main-homePage">
                 <div class="global">
                 <nav>
@@ -35,7 +38,7 @@
                             <li><a href="services.html">Services</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="career.html">Career</a></li>
+                            <li><a class="dropdown" href="pages.html">Pages</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -46,67 +49,131 @@
                 </div>
                     <div class="main-homePage-text">
                         <div class="homePage-link">
-                            <h2>Contact Us</h2>
-                        <p><a href="index.html">Home</a> <i class="fa-solid fa-angle-right"></i> Contact</p>
+                            <h2>Blog</h2>
+                        <p><a href="index.html">Home</a> <i class="fa-solid fa-angle-right"></i> Blog</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section>
-        <div class="contact">
-            <div class="contact-part">
+        <div class="blog">
             <div class="container">
                 <div class="heading-part">
                     <div class="row">
                         <div class="col-12">
-                            <h2>Contact Us</h2>
+                            <h2>Our Blog</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, incidunt?</p>
                         </div>
                     </div>
                     </div>
+
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="form">
-                            <form .contact-form>
+                    <div class="blog-wrapper">
 
-                                <div class="form-row">
-                                    <div class="form-group">
-                                       <input type="text" class="form-control" placeholder="Your Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email">
-                                     </div>
-                                </div>
-
-                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                     </div>
-                                     <div class="form-group">
-                                        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                                     </div>
-                                     <div>
-                                       <button class="btn" type="submit" style="margin-top: 30px;">Send Message</button>
-                                     </div>
-                            </form>
+                        <div class="blog-card">
+                          <div class="card-img">
+                            <img src="img/web-development.jpg">
+                          </div>
+                          <div class="card-details">
+                            <span class="tag tag-silver">Web Development</span>
+                            <span style="font-size: 12px; text-align: right;"><i class="fa fa-calendar"></i> 4 AUGUST 2022</span>
+                          </div>
+                          <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum.</p>
+                          </div>
+                          <button class="btn" >Read More</button>
                         </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26361250.667320687!2d-113.75533773453304!3d36.24128894212527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1574923227698!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                      
+                      
+                      
+                      
+                        <div class="blog-card">
+                          <div class="card-img">
+                            <img src="img/graphics.jpg">
+                          </div>
+                          <div class="card-details">
+                            <span class="tag tag-black">Graphics Design</span>
+                            <span style="font-size: 12px;"><i class="fa fa-calendar"></i> 1 AUGUST 2022</span><br>
+                          </div>
+                          <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum.</p>
+                          </div>
+                          <button class="btn" id="btn">Read More</button>
                         </div>
-                    </div>
-                </div>    
-            </div>
+                      
+                      
+                      
+                      <div class="blog-card">
+                          <div class="card-img">
+                            <img src="img/digital-marketing.jpg">
+                          </div>
+                          <div class="card-details">
+                            <span class="tag tag-red">Digital Marketing</span>
+                            <span style="font-size: 12px;"><i class="fa fa-calendar"></i> 7 AUGUST 2022</span><br>
+                          </div>
+                          <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum.</p>
+                          </div>
+                         <button class="btn" style="margin-bottom: 30px;">Read More</button>
+                        </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section Start -->
+    <section>
+        <div class="review">
+            <div class="container">
+                
+            <div class="row slick_slider">
+                <div class="col-lg-4">
+                    <img src="img/clients1.png">
+                </div>
+    
+                <div class="col-lg-4">
+                    <img src="img/clients2.png">
+                </div>
+    
+                <div class="col-lg-4">
+                    <img src="img/clients3.png">
+                </div>
+    
+                <div class="col-lg-4">
+                    <img src="img/clients4.png">
+                </div>
+    
+                <div class="col-lg-4">
+                    <img src="img/clients5.png">
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="img/clients6.png">
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="img/clients7.png">
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="img/clients8.png">
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="img/clients9.png">
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="img/clients10.png">
+                </div>
+            </div>        
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <div class="footer">
             <div class="container">
@@ -178,7 +245,46 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        $('.slick_slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 100,
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    </script>
 </body>
 </html>

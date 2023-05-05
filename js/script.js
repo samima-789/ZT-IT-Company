@@ -45,4 +45,4 @@ $('.slick_slide2').slick({
 
 
 
-/*-- Shuffle Section --*/
+/*-- Clients Section --*/

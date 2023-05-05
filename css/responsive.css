@@ -134,6 +134,40 @@
     width: 1205px;
    }
 }
-
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    .blog-wrapper{
+      display: block;
+    }
+    
+  }
+  
+  
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .blog-wrapper{
+      display: block;
+    }
+   
+    
+  }
+  
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .blog-wrapper{
+      display: block;
+    }
+  }
+  
+  @media (min-width: 220px) and (max-width: 320px) {
+    
+    .blog-wrapper{
+      display: block;
+    }
+   
+  }
+  
 
 
