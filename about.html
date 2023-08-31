@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ZT IT Company</title>
+    <link rel="icon" type="image" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
@@ -40,7 +41,31 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 </head>
-<body>
+<body onload="myFunction()">
+    <section id="loader">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+        </div>
+    </section>
     <div class="social-icons" id="social-icon">
         <ul>
             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
@@ -293,6 +318,12 @@
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script> 
 <script src="js/slick.min.js"></script>
-<script src="js/script.js"></script>    
+<script src="js/script.js"></script>  
+<script>
+    var preloader = document.getElementById('loader');
+    function myFunction(){
+        preloader.style.display = 'none';
+    }
+</script>  
 </body>
 </html> 
