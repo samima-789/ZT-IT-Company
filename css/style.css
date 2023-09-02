@@ -1625,28 +1625,6 @@ section .portfolio-main .main-homePage .global img{
     text-transform: uppercase;
 }
 
-
-/*--===========================Clients Page Start ======================--*/
-.clients-main{
-    background: url(../img/clients-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 90vh;
-}
-section .clients-main .main-homePage .global img{
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 400px;
-    top: 100px;
-    transition: all ease-in-out .3s ;
-    animation: global 10s infinite;
-}
-
-
-
-
 /*--============================Blog Page Start=============--*/
 .blog-main{
     background: url(../img/blog-bg.jpg) no-repeat;
@@ -1730,9 +1708,33 @@ section .blog-main .main-homePage .global img{
     width: 100px;
   }
   
+/*=============================== Blog-page Page Start =================================*/
+.blog-page-main{
+    background: url(../img/read-our-blog.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
 
+section .container .row .blog-page .col-12{
+    margin-bottom: 100px;
+}
 
+section .blog-page h2{
+    color: #056c5f;
+    font-weight: bolder;
+    font-size: 40px;
+}
 
+section .blog-page img{
+    width: 500px;
+    margin: 0 auto;
+}
+
+section .blog-page p{
+    line-height: 30px;
+}
 
 
   /*--============================= Start Career Pages =================================--*/
