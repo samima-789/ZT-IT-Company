@@ -93,7 +93,7 @@ section{
 
 #social-icon ul li a i:hover{
     transform: rotate(360deg);
-    color: #566573;
+    color: #fff;
 }
 .social-icons{
     position: fixed;
@@ -693,6 +693,18 @@ canvas{
     border: .5px solid #056c5f;
     box-shadow: 1px 1px 10px 1px #566573;
     margin-bottom: 20px;
+}
+
+.special-team a i{
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    transition: .5s;
+}
+
+.special-team a i:hover{
+    color: #008374;
+    transform: scale(1.5);
 }
 
 /*-- Special Team member Section End --*/
