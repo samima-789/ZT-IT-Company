@@ -1,32 +1,12 @@
-/*-- Background Video --*/
-@media (min-aspect-ratio: 16/9){
-    #bg-video{
-        width: 100%;
-        height: auto;
-    }
-
-    .main{
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    #bg-video{
-        width: auto;
-        height: 100%;
-    }
-
-    
-}
-
-/*-- Text Box Section --*/
-
 
 @media(max-width: 1200px){
     .main{
-        width: auto;
-        min-height: 195vh;
+        width: 100%;
+    }
+
+    #bg-video{
+        width: 100%;
+        height: auto;
     }
 
     .nav-links ul li{
@@ -59,6 +39,7 @@
     }
     .text-box{
         width: 80%;
+        top: 30%;
     }
     .text-box h1{
         font-size: 25px;
@@ -67,20 +48,48 @@
     .text-box p{
         font-size: 12px;
     }
+
 }
 
 @media (max-width: 1036px){
+
+    .main{
+        width: 100%;
+    }
+
+    #bg-video{
+        display: none;
+    }
+
+    .text-box{
+        top: 35%;
+    }
+   
     .counter-up{
-       padding: 50px 50px 0 50px;
+        padding: 50px 50px 0 50px;
     }
 
     .content .box{
         width: calc(50% - 30px);
-        margin-bottom: 50px;
     }
-}
 
+    .about-content{
+        margin-top: 50px;
+    }
+
+    .about-content h2{
+        font-size: 10px;
+    }
+    
+}
 @media(max-width: 700px){
+
+    #bg-video{
+        display: none;
+    }
+    .main{
+        width: 100%;
+    }
 
     .nav-links ul li{
         display: block;
@@ -90,7 +99,7 @@
         position: absolute;
         background-color: #008374;
         color: #000;
-        height: 100vh;
+        height: 115vh;
         width: 200px;
         top: 0;
         right: -200px;
@@ -112,6 +121,7 @@
     }
     .text-box{
         width: 80%;
+        top: 35%;
     }
     .text-box h1{
         font-size: 25px;
@@ -120,19 +130,56 @@
     .text-box p{
         font-size: 12px;
     }
+
+    .about-content{
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .about-content h2{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 580px){
+    #bg-video{
+        display: none;
+    }
+
+    .main{
+        width: 100%;
+    }
     .content .box{
         width: 100%;
+    }
+
+    .about-content{
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .text-box{
+        top: 35%;
     }
 }
 
 @media(max-width: 320px){
+    #bg-video{
+        display: none;
+    }
    .main{
-    min-height: 105vh;
-    width: 1205px;
+    width: 100%;
    }
+
+   .about-content{
+    margin-left: 0;
+    margin-top: 50px;
+}
+
+.about-content h2{
+    font-size: 20px;
+}
+
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   

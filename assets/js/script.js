@@ -32,6 +32,26 @@ $('.slick_slide1').slick({
   dots:true,
   speed: 800,
   autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 768, // Breakpoint for tablets
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 600, // Breakpoint for tablets
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 480, // Breakpoint for mobile devices
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
 });
 
 $('.slick_slide2').slick({
@@ -41,6 +61,26 @@ $('.slick_slide2').slick({
   dots:true,
   speed: 800,
   autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 768, // Breakpoint for tablets
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 600, // Breakpoint for 600px screens
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 480, // Breakpoint for mobile devices
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
 });
 
 
