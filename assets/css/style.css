@@ -178,9 +178,14 @@ section #btn:hover{
 }
 
 /*--------- 2.4 - Background video part ---------*/
-#bg-video{
-    min-height: 100vh;
+.header{
+    position: relative;
     width: 100%;
+    overflow: hidden;
+}
+#bg-video{
+    width: 100%;
+    min-height: 100vh;
     position: absolute;
     z-index: -1; 
 }
