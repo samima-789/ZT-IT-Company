@@ -228,12 +228,30 @@ section #btn:hover{
 .container .col-lg-6 h2 span{
     color: #eea676;
 }
+
 section .heading-part h2{
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
     font-size: 35px;
     font-weight: 500;
     color: #008374;
+    position: relative;
+    margin-bottom: 20px;
 }
+
+section .heading-part h2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 75px;
+    height: 2px;
+    background-color: #eea676;
+    left: 42%;
+    bottom: 0;
+    transform: translate(0, 45%);
+}
+
+
 section .heading-part p{
     color: #566573;
     font-family: Arial, Helvetica, sans-serif;
