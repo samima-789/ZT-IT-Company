@@ -94,7 +94,6 @@
     }
 
     #about .container .about-img img{
-        width: 507px;
         height: 350px;
         margin-top: 100px;
     }
@@ -361,6 +360,36 @@
     width: 250px;
 }
 
+.our-vision-mission .vision-img img{
+    width: 180px;
+    height: 180px;
+}
+
+.our-vision-mission .vision-img .vision-img-part-1{
+    width: 210px;
+    height: 210px;
+}
+
+.our-vision-mission .vision-img .vision-img-part-2{
+    width: 210px;
+    height: 210px;
+}
+
+.our-vision-mission .mission-img img{
+    width: 180px;
+    height: 180px;
+}
+
+.our-vision-mission .mission-img .mission-img-part-1{
+    width: 210px;
+    height: 210px;
+}
+
+.our-vision-mission .mission-img .mission-img-part-2{
+    width: 210px;
+    height: 210px;
+}
+
 .srvc1{
     width: auto;
 }
@@ -448,14 +477,27 @@
         width: 50%;
         margin: auto;
     }
-
-    .offer img{
-        margin-left: 80px;
-    }
     
     
     .blog-wrapper{
       display: block;
+    }
+
+    .software .services-item .services-item-part h2{
+        font-size: 30px;
+    }
+
+    section .heading-part h2{
+        font-size: 35px;
+    }
+
+    .item-details .item img{
+        width: 265px;
+    }
+
+    .overlay{
+        width: 230px;
+        height: 150px;
     }
    
   }
