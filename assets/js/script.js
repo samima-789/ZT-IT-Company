@@ -120,7 +120,7 @@ $('.blog_slider').slick({
 
 /*-- Pre Loader Section --*/
 var preloader = document.getElementById('loader');
-      function myFunction() {
+      function preLoader() {
         preloader.style.display = 'none';
  };
 
