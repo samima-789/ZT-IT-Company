@@ -27,7 +27,8 @@ $(document).ready(function(){
 
 
 /*-- Slick-slider --*/
-$('.slick_slide1').slick({
+/*-- Team slick-slider --*/
+$('.team_slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
@@ -56,7 +57,8 @@ $('.slick_slide1').slick({
   ]
 });
 
-$('.slick_slide2').slick({
+/*-- Review slick-slider --*/
+$('.review_slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
@@ -123,7 +125,5 @@ var preloader = document.getElementById('loader');
       function preLoader() {
         preloader.style.display = 'none';
  };
-
-
 
  
