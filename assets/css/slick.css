@@ -1,23 +1,18 @@
 /* Slider */
-.slick-slider
-{
+.slick-slider{
     position: relative;
-
     display: block;
     box-sizing: border-box;
-
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-
 .slick-list
 {
     position: relative;
@@ -37,7 +32,6 @@
     cursor: pointer;
     cursor: hand;
 }
-
 .slick-slider .slick-track,
 .slick-slider .slick-list
 {
@@ -47,7 +41,6 @@
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 }
-
 .slick-track
 {
     position: relative;
@@ -73,7 +66,6 @@
 {
     visibility: hidden;
 }
-
 .slick-slide
 {
     display: none;
@@ -117,3 +109,4 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+

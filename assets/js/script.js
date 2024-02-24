@@ -8,12 +8,13 @@ var navLinks = document.getElementById("navLinks");
 };
 
 /*-- Text Typing animation --*/
-var typed = new Typed('.type', {
-    strings: ['Drop Shipping', 'App Develoment', 'Software Solution', 'ERP Software Solution'],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true,
-});
+  var Typed = new Typed('#type', {
+      strings: ['Drop Shipping', 'App Develoment', 'Software Solution', 'ERP Software Solution'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+  });
+
 
 /*-- Counter Up Section --*/
 $(document).ready(function(){
@@ -21,6 +22,7 @@ $(document).ready(function(){
       delay: 10,
       time: 1200
   });
+  
 });
 
 
@@ -83,6 +85,45 @@ $('.slick_slide2').slick({
   ]
 });
 
+/*-- Blog slick-slider --*/
+$(document).ready(function(){
+$('.blog_slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 100,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+            }
+          }, {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }, {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
 
 
-/*-- Clients Section --*/
+/*-- Pre Loader Section --*/
+var preloader = document.getElementById('loader');
+      function myFunction() {
+        preloader.style.display = 'none';
+ };
+
+
+
+ 
