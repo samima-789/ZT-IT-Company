@@ -117,13 +117,22 @@ $('.blog_slider').slick({
       }
     ]
   });
-
-
 });
 
 
-/*-- Pre Loader Section --*/
-var preloader = document.getElementById('loader');
-    async function preLoader() {
-        preloader.style.display = 'none';
- };
+/*-- Pre Loader --*/
+ // Define meaningful variables
+const preloader = document.getElementById('preloader');
+const content = document.getElementById('page-content');
+
+// Perform actions directly within the body
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM loaded");
+
+    // Simulate loading time (you can replace this with actual loading code)
+    setTimeout(function() {
+        preloader.style.display = 'none'; // Hide preloader
+        content.style.display = 'block'; // Show content
+        console.log("Content loaded");
+    }, 1000); 
+});

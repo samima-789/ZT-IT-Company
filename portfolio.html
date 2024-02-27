@@ -21,31 +21,14 @@
     <link rel="stylesheet" href="assets/css/ionicons/css/ionicons.min.css">
     
   </head>
-  <body onload="preLoader()">
-    <section id="loader">
-      <div class="loader">
-        <span style="--i:1;"></span>
-        <span style="--i:2;"></span>
-        <span style="--i:3;"></span>
-        <span style="--i:4;"></span>
-        <span style="--i:5;"></span>
-        <span style="--i:6;"></span>
-        <span style="--i:7;"></span>
-        <span style="--i:8;"></span>
-        <span style="--i:9;"></span>
-        <span style="--i:10;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-      </div>
-    </section>
+  <body>
+    <!-- Pre Loader -->
+    <div id="preloader">
+      <div id="loader"></div>
+  </div>
+
+    <div id="page-content">
+      <!-- Social Icons -->
     <div class="social-icons" id="social-icon">
       <ul>
         <li>
@@ -326,17 +309,11 @@
         </div>
       </div>
     </footer>
+  </div>
     <!-- Main js-->
     <script src="assets/js/script.js"></script>
     <!-- Bootstrap JS -->
     <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
-    <script>
-      var preloader = document.getElementById('loader');
-
-      function myFunction() {
-        preloader.style.display = 'none';
-      }
-    </script>
   </body>
 </html>
