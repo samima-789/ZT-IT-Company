@@ -345,9 +345,25 @@
     </footer>
   </div>
     <!-- Main JS -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
     <!-- Bootstrap JS-->
     <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script>
+      const preloader = document.getElementById('preloader');
+const pageContent = document.getElementById('page-content');
+
+// Perform actions directly within the body
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM loaded");
+
+    // Simulate loading time (you can replace this with actual loading code)
+    setTimeout(function() {
+        preloader.style.display = 'none';
+        pageContent.style.display = 'block';
+        console.log("Content loaded");
+    }, 1000); 
+});
+    </script>
   </body>
 </html>

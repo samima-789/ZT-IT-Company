@@ -123,7 +123,7 @@ $('.blog_slider').slick({
 /*-- Pre Loader --*/
  // Define meaningful variables
 const preloader = document.getElementById('preloader');
-const content = document.getElementById('page-content');
+const pageContent = document.getElementById('page-content');
 
 // Perform actions directly within the body
 document.addEventListener('DOMContentLoaded', function() {
@@ -131,8 +131,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Simulate loading time (you can replace this with actual loading code)
     setTimeout(function() {
-        preloader.style.display = 'none'; // Hide preloader
-        content.style.display = 'block'; // Show content
+        preloader.style.display = 'none';
+        pageContent.style.display = 'block';
         console.log("Content loaded");
     }, 1000); 
 });

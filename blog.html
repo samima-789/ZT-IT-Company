@@ -299,10 +299,27 @@
     <!-- Slick JS -->
     <script src="assets/js/plugins/slick.min.js"></script>
     <!-- Main JS -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
 
 
     <script>
+
+const preloader = document.getElementById('preloader');
+const pageContent = document.getElementById('page-content');
+
+// Perform actions directly within the body
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM loaded");
+
+    // Simulate loading time (you can replace this with actual loading code)
+    setTimeout(function() {
+        preloader.style.display = 'none';
+        pageContent.style.display = 'block';
+        console.log("Content loaded");
+    }, 1000); 
+});
+
+
 $(document).ready(function(){
 $('.blog_slider').slick({
         dots: true,
