@@ -1,3 +1,5 @@
+
+
 /*-- Navigation Bar Section --*/
 var navLinks = document.getElementById("navLinks");
   function showMenu(){

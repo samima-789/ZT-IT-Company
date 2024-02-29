@@ -104,7 +104,6 @@ section{
 #page-content {
     display: none; /* Hide content by default */
 }
-
 /*---------- 2.2 - Social icon part -------------*/
 #social-icon ul li a i{
     transition: .5s;
