@@ -406,22 +406,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   <!-- Main JS -->
   <script src="assets/js/script.js" defer></script>
-  <script>
-    const preloader = document.getElementById('preloader');
-    const pageContent = document.getElementById('page-content');
-
-    // Perform actions directly within the body
-    document.addEventListener('DOMContentLoaded', function () {
-      console.log("DOM loaded");
-
-      // Simulate loading time (you can replace this with actual loading code)
-      setTimeout(function () {
-        preloader.style.display = 'none';
-        pageContent.style.display = 'block';
-        console.log("Content loaded");
-      }, 1000);
-    });
-  </script>
 </body>
 
 </html>

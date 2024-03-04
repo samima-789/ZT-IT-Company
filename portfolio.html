@@ -16,9 +16,13 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
   <!-- Font-awsome CSS -->
+  <link rel="stylesheet" href="assets/css/plugins/all.min.css">
   <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css">
   <!-- Libraries CSS -->
   <link rel="stylesheet" href="assets/css/ionicons/css/ionicons.min.css">
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+  <script src="assets/js/plugins/jquery.min.js"></script>
 
 </head>
 
@@ -329,24 +333,9 @@
   <!-- Bootstrap JS -->
   <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
   <script src="assets/js/plugins/bootstrap.min.js"></script>
-  <!-- Main js-->
+  <script src="assets/js/plugins/popper.min.js"></script>
+  <!-- Main JS -->
   <script src="assets/js/script.js" defer></script>
-  <script>
-    const preloader = document.getElementById('preloader');
-    const pageContent = document.getElementById('page-content');
-
-    // Perform actions directly within the body
-    document.addEventListener('DOMContentLoaded', function () {
-      console.log("DOM loaded");
-
-      // Simulate loading time (you can replace this with actual loading code)
-      setTimeout(function () {
-        preloader.style.display = 'none';
-        pageContent.style.display = 'block';
-        console.log("Content loaded");
-      }, 1000);
-    });
-  </script>
 </body>
 
 </html>
