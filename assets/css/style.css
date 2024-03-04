@@ -266,7 +266,7 @@ section .heading-part p{
 /*------------------- 5.0 - Main-HomePage-Text Part -------------------*/
 section .main-homePage .global{
     width: 100%;
-    height: 105vh;
+    height: 500px;
     margin: 0 auto;
     position: relative;
     background-color: rgba(3, 0, 8, 0.7);
@@ -778,7 +778,7 @@ canvas{
 }
 .about-main-homePage .about-global{
     width: 100%;
-    height: 100vh;
+    height: 500px;
     margin: 0 auto;
     position: relative;
     background-color: rgba(3, 0, 8, 0.7);
