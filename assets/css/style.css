@@ -400,13 +400,12 @@ nav .fa{
 
 
 /*------------------ 7.0 Hero Section start ---------------------*/
+
 .text-box{
-    width: 55%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     justify-content: center;
     text-align: center;
     padding: 20px;
@@ -783,7 +782,7 @@ canvas{
 }
 .about-main-homePage .about-global{
     width: 100%;
-    height: 105vh;
+    height: 100vh;
     margin: 0 auto;
     position: relative;
     background-color: rgba(3, 0, 8, 0.7);
