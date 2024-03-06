@@ -22,47 +22,71 @@ if ($("#type").length > 0) {
   });
 }
 
+if ($(".item-menu").length > 0) {
+  // init Isotope
+  setTimeout(function () {
+    var $grid = $(".item-details").isotope({
+      // options
+    });
+
+    // filter items on button click
+    $(".item-menu").on("click", "li", function () {
+      var filterValue = $(this).attr("data-filter");
+      $grid.isotope({
+        filter: filterValue,
+      });
+    });
+  }, 2000);
+}
+
 /*-- Counter Up Section --*/
-$(document).ready(function () {
+if ($(".counter").length > 0) {
   $(".counter").counterUp({
     delay: 10,
     time: 1200,
   });
+}
 
-  /*-- Blog slick-slider --*/
+/*-- Blog slick-slider --*/
+setTimeout(function () {
+  if ($(".blog_slider").length > 0) {
+    $(".blog_slider").slick({
+      dots: true,
+      infinite: true,
+      speed: 100,
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+}, 2000);
+/*-- Slick-slider --*/
 
-  $(".blog_slider").slick({
-    dots: true,
-    infinite: true,
-    speed: 100,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
-  /*-- Slick-slider --*/
+if ($(".team_slider").length > 0) {
   /*-- Team slick-slider --*/
   $(".team_slider").slick({
     slidesToShow: 4,
@@ -92,8 +116,10 @@ $(document).ready(function () {
       },
     ],
   });
+}
 
-  /*-- Review slick-slider --*/
+/*-- Review slick-slider --*/
+if ($(".review_slider").length > 0) {
   $(".review_slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -122,7 +148,7 @@ $(document).ready(function () {
       },
     ],
   });
-});
+}
 
 /*-- Pre Loader --*/
 // Define meaningful variables
