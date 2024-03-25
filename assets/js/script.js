@@ -25,9 +25,9 @@ if ($("#type").length > 0) {
 
 /*-- Counter Up Section --*/
 $(document).ready(function(){
-  $(".counter").counterUp({
-      delay: 10,
-      time: 1200
+  $('.counter').counterUp({
+    delay:10,
+    time:1200,
   });
 });
 
