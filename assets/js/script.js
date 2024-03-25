@@ -1,4 +1,5 @@
 /*-- Navigation Bar Section --*/
+
 var navLinks = document.getElementById("navLinks");
 function showMenu() {
   navLinks.style.right = "0";
@@ -23,11 +24,13 @@ if ($("#type").length > 0) {
 }
 
 /*-- Counter Up Section --*/
-$(document).ready(function () {
+$(document).ready(function(){
   $(".counter").counterUp({
-    delay: 10,
-    time: 1200,
+      delay: 10,
+      time: 1200
   });
+});
+
 
   /*-- Blog slick-slider --*/
 
@@ -64,12 +67,13 @@ $(document).ready(function () {
   });
   /*-- Slick-slider --*/
   /*-- Team slick-slider --*/
+  $(document).ready(function () {
   $(".team_slider").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     dots: true,
-    speed: 800,
+    speed: 300,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -92,8 +96,9 @@ $(document).ready(function () {
       },
     ],
   });
-
+  });
   /*-- Review slick-slider --*/
+  $(document).ready(function () {
   $(".review_slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
