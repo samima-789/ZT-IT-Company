@@ -1420,7 +1420,10 @@ canvas {
     background: #056c5f;
     color: #eea676;
 }
-
+.item-details{
+    height: 600px;
+    width: 1125px;
+}
 .item-details .item img {
     width: 300px;
     margin-bottom: 50px;
@@ -1639,6 +1642,7 @@ canvas {
 
 .review .slick-slider img {
     width: 100px;
+    margin: 0 autoe;
 }
 
 /*===============================-- 18.0 - BlogPage Start --=================================*/

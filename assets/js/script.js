@@ -140,7 +140,6 @@ $(document).ready(function(){
 /*-- Isotop --*/
 if ($(".item-details").length > 0) { 
 var $grid = $('.item-details').isotope({
-    
 });
 $('.item-menu').on( 'click', 'li', function() {
   var filterValue = $(this).attr('data-filter');
@@ -148,8 +147,6 @@ $('.item-menu').on( 'click', 'li', function() {
 });
 
 $('.item-menu').on( 'click', 'li', function() {
-  $(this).activeClass('active').siblings.removeClass('active');
-
 });
 }
 /*-- Pre Loader --*/
